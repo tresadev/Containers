@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C3254EA1BD2EA15009126E4 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3254E91BD2EA15009126E4 /* Stack.swift */; settings = {ASSET_TAGS = (); }; };
+		5CC209C31BD01E5E00551774 /* Crane.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CC209C11BD01E5E00551774 /* Crane.c */; settings = {ASSET_TAGS = (); }; };
 		5CC458C21BCFD781000A550F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC458C11BCFD781000A550F /* AppDelegate.swift */; };
 		5CC458C41BCFD781000A550F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC458C31BCFD781000A550F /* ViewController.swift */; };
 		5CC458C71BCFD781000A550F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC458C51BCFD781000A550F /* Main.storyboard */; };
@@ -30,6 +31,9 @@
 /* Begin PBXFileReference section */
 		1A64240797CD95F1AEE71B09 /* Pods_ContainersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3254E91BD2EA15009126E4 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		5CC209C01BD01E5E00551774 /* Containers-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Containers-Bridging-Header.h"; sourceTree = "<group>"; };
+		5CC209C11BD01E5E00551774 /* Crane.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Crane.c; sourceTree = "<group>"; };
+		5CC209C21BD01E5E00551774 /* Crane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crane.h; sourceTree = "<group>"; };
 		5CC458BE1BCFD781000A550F /* Containers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Containers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC458C11BCFD781000A550F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CC458C31BCFD781000A550F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,9 @@
 				5CC458CA1BCFD781000A550F /* LaunchScreen.storyboard */,
 				5CC458CD1BCFD781000A550F /* Info.plist */,
 				5C3254E91BD2EA15009126E4 /* Stack.swift */,
+				5CC209C11BD01E5E00551774 /* Crane.c */,
+				5CC209C21BD01E5E00551774 /* Crane.h */,
+				5CC209C01BD01E5E00551774 /* Containers-Bridging-Header.h */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -170,6 +177,7 @@
 		5CC458B61BCFD781000A550F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					5CC458BD1BCFD781000A550F = {
@@ -275,6 +283,7 @@
 			files = (
 				5CC458C41BCFD781000A550F /* ViewController.swift in Sources */,
 				5C3254EA1BD2EA15009126E4 /* Stack.swift in Sources */,
+				5CC209C31BD01E5E00551774 /* Crane.c in Sources */,
 				5CC458C21BCFD781000A550F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,10 +413,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Containers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.philips.pins.Containers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Containers/Containers-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -415,10 +427,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Containers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.philips.pins.Containers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Containers/Containers-Bridging-Header.h";
 			};
 			name = Release;
 		};
