@@ -18,7 +18,7 @@ Run the tests (keyboard shortcut: ⌘U), and see that you have one succeeding te
 
 The exercise
 -------------
-You have just been hired by a small container port to create software for their latest automatic crane. The crane comes with a state-of-the-art C interface that allows you to raise and lower shipping containers. You can find it in the `Crane.c` file.
+You have just been hired by a small container port to create software for their latest automatic crane. The crane comes with a state-of-the-art C interface that allows you to raise and lower shipping containers. You can find it in the `Crane.c` file. Every container has a unique id that must be passed to the crane when raising or lowering that container.
 
 The software that you write is responsible for maintaining a stack of shipping containers. It ought to be able to:
 
