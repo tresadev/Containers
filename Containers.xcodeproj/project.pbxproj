@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		28EF1E2B1BD55B860098DD65 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF1E2A1BD55B860098DD65 /* Container.swift */; settings = {ASSET_TAGS = (); }; };
+		28EF1E2D1BD566F90098DD65 /* CraneOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF1E2C1BD566F90098DD65 /* CraneOperatorTests.swift */; settings = {ASSET_TAGS = (); }; };
+		28EF1E2F1BD571460098DD65 /* Crain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF1E2E1BD571460098DD65 /* Crain.swift */; settings = {ASSET_TAGS = (); }; };
+		28EF1E311BD5719E0098DD65 /* CrainOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF1E301BD5719E0098DD65 /* CrainOperator.swift */; settings = {ASSET_TAGS = (); }; };
 		5C3254EA1BD2EA15009126E4 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3254E91BD2EA15009126E4 /* Stack.swift */; settings = {ASSET_TAGS = (); }; };
 		5CC209C31BD01E5E00551774 /* Crane.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CC209C11BD01E5E00551774 /* Crane.c */; settings = {ASSET_TAGS = (); }; };
 		5CC458C21BCFD781000A550F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC458C11BCFD781000A550F /* AppDelegate.swift */; };
@@ -32,6 +35,9 @@
 /* Begin PBXFileReference section */
 		1A64240797CD95F1AEE71B09 /* Pods_ContainersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28EF1E2A1BD55B860098DD65 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		28EF1E2C1BD566F90098DD65 /* CraneOperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CraneOperatorTests.swift; sourceTree = "<group>"; };
+		28EF1E2E1BD571460098DD65 /* Crain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crain.swift; sourceTree = "<group>"; };
+		28EF1E301BD5719E0098DD65 /* CrainOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrainOperator.swift; sourceTree = "<group>"; };
 		5C3254E91BD2EA15009126E4 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		5CC209C01BD01E5E00551774 /* Containers-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Containers-Bridging-Header.h"; sourceTree = "<group>"; };
 		5CC209C11BD01E5E00551774 /* Crane.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Crane.c; sourceTree = "<group>"; };
@@ -103,6 +109,8 @@
 				5CC209C21BD01E5E00551774 /* Crane.h */,
 				5CC209C01BD01E5E00551774 /* Containers-Bridging-Header.h */,
 				28EF1E2A1BD55B860098DD65 /* Container.swift */,
+				28EF1E2E1BD571460098DD65 /* Crain.swift */,
+				28EF1E301BD5719E0098DD65 /* CrainOperator.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -112,6 +120,7 @@
 			children = (
 				5CC458D61BCFD781000A550F /* StackTests.swift */,
 				5CC458D81BCFD781000A550F /* Info.plist */,
+				28EF1E2C1BD566F90098DD65 /* CraneOperatorTests.swift */,
 			);
 			path = ContainersTests;
 			sourceTree = "<group>";
@@ -289,6 +298,8 @@
 				28EF1E2B1BD55B860098DD65 /* Container.swift in Sources */,
 				5CC209C31BD01E5E00551774 /* Crane.c in Sources */,
 				5CC458C21BCFD781000A550F /* AppDelegate.swift in Sources */,
+				28EF1E311BD5719E0098DD65 /* CrainOperator.swift in Sources */,
+				28EF1E2F1BD571460098DD65 /* Crain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC458D71BCFD781000A550F /* StackTests.swift in Sources */,
+				28EF1E2D1BD566F90098DD65 /* CraneOperatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

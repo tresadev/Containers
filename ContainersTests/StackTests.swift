@@ -1,6 +1,5 @@
 import Quick
 import Nimble
-import Containers
 
 @testable import Containers
 

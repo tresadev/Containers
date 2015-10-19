@@ -1,7 +1,10 @@
 import Foundation
 
-class Container {
+public class Container {
+    
+    public let containerId: Int
+    
     init(containerId: Int) {
-        
+        self.containerId = containerId
     }
 }
