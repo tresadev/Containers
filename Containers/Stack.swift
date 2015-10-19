@@ -2,24 +2,23 @@ import Foundation
 
 public class Stack {
     
-    var count:Int = 0
-    
-    var container: Container?
+    var container: [Container] = []
     
     public init() {
         
     }
     
     func push(container: Container) {
-        self.count++
-        self.container = container
+        self.container.insert(container, atIndex: 0)
     }
     
     func pop() -> Container? {
-        guard self.count > 0 else { return nil }
+        guard self.container.count > 0 else { return nil }
         
-        self.count--
-        return self.container
+        return self.container.removeFirst()
     }
     
+    func top() -> Container? {
+        return container.first
+    }
 }
