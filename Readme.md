@@ -41,6 +41,12 @@ Unfortunately these companies couldn't agree on a common base class, so you'll h
 
 You can find the shipping container classes in `ContainerBrands.swift` file in the `brands` branch of this repository. 
 
+Advanced challenge
+------------------
+
+If that was not enough for you, we have more! There is also a Fast Crane that was implemented in Objective-C. This will give you whole new worlds of pain. Your assignment is to implement the classes in the branch `fast_crane`, specifically `FastCrane.m` and `Container.swift`. Of course you need to do this in a test-driven fashion as well.
+
+
 Wrap-up
 -------
 
