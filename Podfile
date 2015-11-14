@@ -4,7 +4,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target :ContainersTests do
-  pod 'Quick'
-  pod 'Nimble'
+    pod 'Quick'
+    pod 'Nimble'
 end
 
