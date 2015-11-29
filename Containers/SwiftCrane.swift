@@ -21,7 +21,7 @@ public class SwiftCrane {
         return raisedContainer;
     }
     
-    func getStack() -> Stack {
-        return self.stack;
+    func top() -> ContainerBrandProtocol {
+        return self.stack.top();
     }
 }

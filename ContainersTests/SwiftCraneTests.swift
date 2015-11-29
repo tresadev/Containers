@@ -28,16 +28,16 @@ class SwiftCraneTests: QuickSpec {
 
                 let nedlloydContainer: ContainerBrandProtocol = NedlloydContainer(label: 1)
                 crane.lower(nedlloydContainer);
+                expect(crane.top().brand).to(match(nedlloydContainer.brand))
 
                 let maerskContainer : ContainerBrandProtocol = MaerskContainer(id:2);
                 crane.lower(maerskContainer);
+                expect(crane.top().brand).to(match(maerskContainer.brand))
 
                 let kLineContainer : ContainerBrandProtocol = KLineContainer(serialNumber:3);
                 crane.lower(kLineContainer);
-                
-                expect(crane.getStack().objectAt(0).brand).to(match(nedlloydContainer.brand))
-                expect(crane.getStack().objectAt(1).brand).to(match(maerskContainer.brand))
-                expect(crane.getStack().objectAt(2).brand).to(match(kLineContainer.brand))
+                expect(crane.top().brand).to(match(kLineContainer.brand))
+
             }
         }
     }

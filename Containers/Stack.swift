@@ -16,11 +16,11 @@ public class Stack {
         return self.containers .removeLast()
     }
     
-    func objectAt(index:Int) -> ContainerBrandProtocol {
-        return self.containers[index]
+    func top() -> ContainerBrandProtocol {
+        return (self.containers.last)!
     }
     
-    func containersArray() -> Array<ContainerBrandProtocol>{
-        return self.containers
+    func isEmpty() -> Bool {
+        return self.containers.isEmpty
     }
 }
