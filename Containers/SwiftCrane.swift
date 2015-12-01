@@ -4,7 +4,7 @@ import Foundation
 
 public class SwiftCrane {
     
-    private var stack :Stack;
+    internal var stack :Stack;
     
     public init() {
         self.stack = Stack();
@@ -19,9 +19,5 @@ public class SwiftCrane {
         let raisedContainer : ContainerBrandProtocol = self.stack.pop()
         raise_container(raisedContainer.container_id);
         return raisedContainer;
-    }
-    
-    func top() -> ContainerBrandProtocol {
-        return self.stack.top();
     }
 }
