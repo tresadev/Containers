@@ -2,7 +2,7 @@ import Foundation
 
 public class Stack {
 
-    internal var containers:[ContainerBrandProtocol] = []
+    private var containers:[ContainerBrandProtocol] = []
     
     public init() {
 
@@ -16,7 +16,7 @@ public class Stack {
         return self.containers .removeLast()
     }
     
-    func top() -> ContainerBrandProtocol {
-        return (self.containers.last)!
+    func isEmpty() -> Bool {
+        return self.containers.isEmpty
     }
 }

@@ -9,7 +9,7 @@ class SwiftCraneTests: QuickSpec {
     override func spec() {
 
         describe("Swift crane"){
-
+            
             it("can be created") {
                 expect(SwiftCrane()).toNot(beNil())
             }
@@ -28,15 +28,16 @@ class SwiftCraneTests: QuickSpec {
 
                 let nedlloydContainer: ContainerBrandProtocol = NedlloydContainer(label: 1)
                 crane.lower(nedlloydContainer);
-                expect(crane.stack.top().brand).to(match(nedlloydContainer.brand))
 
                 let maerskContainer : ContainerBrandProtocol = MaerskContainer(id:2);
                 crane.lower(maerskContainer);
-                expect(crane.stack.top().brand).to(match(maerskContainer.brand))
 
                 let kLineContainer : ContainerBrandProtocol = KLineContainer(serialNumber:3);
                 crane.lower(kLineContainer);
-                expect(crane.stack.top().brand).to(match(kLineContainer.brand))
+                
+                expect(kLineContainer.brand).to(match(crane.raise().brand))
+                expect(maerskContainer.brand).to(match(crane.raise().brand))
+                expect(nedlloydContainer.brand).to(match(crane.raise().brand))
 
             }
         }

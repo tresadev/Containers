@@ -15,7 +15,7 @@ class StackTests: QuickSpec {
             }
 
             it("stack is empty on intialization") {
-                expect(Stack().containers.isEmpty).to(beTruthy())
+                expect(Stack().isEmpty()).to(beTruthy())
             }
             
             it("push the container to the top of the stack and pop the same") {

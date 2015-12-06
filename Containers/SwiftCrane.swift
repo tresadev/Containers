@@ -4,7 +4,7 @@ import Foundation
 
 public class SwiftCrane {
     
-    internal var stack :Stack;
+    private var stack :Stack;
     
     public init() {
         self.stack = Stack();
